@@ -51,7 +51,9 @@
           <h1 class="ps-center">Nuentro Menu</h1>
           <br />
           <% for(let i = 0; i < menu.length; i++) {%> 
-          <h4><%= menu[i].meal %> </h4>
+          <a class="meal" href="/detalle/<%= menu[i].id %> ">
+            <h4><%= menu[i].meal %> </h4>
+          </a>
           <p class="ps-text-grey">
             <%= menu[i].description %>  $<%= menu[i].price %> USD
           </p>

@@ -30,7 +30,11 @@ const menu = [
 ]
 
 const controller = {
-    listMeals: (req, res, next) => res.render('index', { menu: menu })
+    listMeals: (req, res, next) => res.render('index', { menu: menu }),
+    getMeal: (req, res, next) => {
+        const mealChosen = menu.find(menu => menu.id === parseInt(req.params.id))
+        res.render('detalleMenu', { mealChosen })
+    }
 }
 
 

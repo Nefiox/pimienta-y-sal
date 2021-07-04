@@ -76,6 +76,15 @@ img {
 a {
   color: inherit;
 }
+
+.meal {
+  text-decoration: none;
+}
+
+.meal:hover {
+  color: rgb(9, 75, 0);
+}
+
 .ps-bordered tr,
 .ps-table-all tr {
   border-bottom: 1px solid #ddd;
